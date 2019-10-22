@@ -1,0 +1,25 @@
+0. Sa se citeasca de la tastatura doua numere naturale A si B. Sa se afiseze suma lor: A+B. 
+A,B < 2,500,000,000.
+
+1. Sa se afiseze suma numerelor perfecte din intervalul [a,b]. Un numar este perfect daca este fix egal cu suma divizorilor sai proprii si 1. Exemplu: 6 = 1+2+3. 6 este perfect. 8 != 1+2+4. 8 nu este perfect. a si b se citesc de la tastatura.
+0<a<b<4,000,000,000.
+
+2. Bunicuta vrea sa faca prajituri. Pentru aceasta ea are la dispozitie n forme de copt. Formele de copt sunt niste prisme (obiecte tridimensionale) care au la baza patru categorii de figuri geometrice plane:
+  1. cerc - determinat de raza
+  2. dreptunghi - determinat de latura mica si latura mare
+  3. patrat - determinat de latura 
+  4. triunghi dreptunghic - determinat de cateta mica si cateta mare.
+Pe langa baza, formele de copt au si o inaltime (h). 
+Bunicuta intentioneaza sa umple toate formele de copt in interior cu gem iar dupa coacere doreste sa le unga pe intreaga suprafata exterioara cu frisca. Conform retetei, bunicuta foloseste 2 grame de gem pentru fiecare centimetru cub de prajitura umplut si 1 gram de frisca 
+pentru fiecare centimetru patrat de prajitura uns. 
+Scrieti un program care sa o ajute pe Bunicuta sa determine cantitatile necesare de gem si frisca astfel:
+Bunicuta va putea adauga o forma de copt (Comanda ADD) caz in care:
+  - Se citeste pentru forma tipul bazei ei (cerc, dreptunghi, patrat, triunghi)
+  - Se citesc apoi caracteristicele bazei
+  - Se citeste apoi inaltimea formei de copt (h)
+  - Inainte de a trece la urmatoarea comanda se afiseaza cantitatile de gem si frisca necesare pentru aceasta.
+Bunicuta va putea elimina a x-a forma de copt (Comanda REMOVE x) existenta in ordinea introducerii (numerotarea incepe de la 1).
+Bunicuta va putea afisa necesarul curent total al fiecarui ingredient (gem, frisca) pentru formele existente (comanda TOTAL).
+Programul se incheie prin comanda STOP.
+
+Daca stiti OOP, aplicati conceptele de OOP pe care le considerati relevante.
