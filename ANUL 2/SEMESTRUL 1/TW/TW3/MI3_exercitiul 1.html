@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  counter-reset: section 3 elemente 0;
+}
+
+h1 {
+  counter-reset: subsection;
+  /* daca vreau sa contorizez si h1 si body pun counter-increment: ceva 1 elemente 1*/
+  color:green;
+}
+/* //5 // mereu o sa apara 1 */
+h1::before {
+  counter-increment: section;
+  content: "Section " counter(section) ". ";
+}
+
+h2::before {
+  counter-increment: subsection 2;
+  
+  color:blue;
+  content: counter(section) "." counter(subsection) " ";
+}
+
+body *{
+  counter-increment: elemente;
+}
+body::after
+{
+  content: counter(elemente);
+}
+
+</style>
+</head>
+<body>
+
+
+<h1>HTML tutorials:</h1>
+<h2>HTML Tutorial</h2>
+<h2>CSS Tutorial</h2>
+
+<h1>Scripting tutorials:</h1>
+<h2>JavaScript</h2>
+<h2>VBScript</h2>
+
+<h1>XML tutorials:</h1>
+<h2>XML</h2>
+<h2>XSL</h2>
+
+<p><b>Note:</b> IE8 supports these properties only if a !DOCTYPE is specified.</p>
+
+</body>
+</html>
