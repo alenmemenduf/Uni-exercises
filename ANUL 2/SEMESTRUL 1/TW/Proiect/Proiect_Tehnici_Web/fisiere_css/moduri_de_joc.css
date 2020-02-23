@@ -1,0 +1,26 @@
+.container2>div img{
+	width:50%;
+}
+#atentie{
+	display:block;
+	width:100%;
+}
+#atentie p{
+	color:red;
+	font-weight:bold;
+	text-decoration:underline;
+}
+#atentie+p{
+	text-decoration:underline;
+}
+.container p{
+	margin-top:7px;
+}
+img~ul{
+	display:block;
+	margin-left:15%;
+	margin-right:10%;
+	font-family:Lux-Montag;
+	color:rgb(60,60,165);
+	font-size:2em;
+}

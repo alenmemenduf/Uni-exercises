@@ -1,0 +1,15 @@
+table,th,td,caption{
+	word-wrap:break-word;
+	text-align:center;
+	padding:1vw;
+	border-collapse:collapse;
+	margin:auto;
+	border: 1px solid black;
+}
+
+.container2 table+p{
+	color:red;
+	text-decoration:underline;
+	font-weight:bold;
+	
+}

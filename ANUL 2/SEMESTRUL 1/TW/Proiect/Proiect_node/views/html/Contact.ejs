@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<title>Andromeda - Contact</title>
+		<meta charset="UTF-8">
+	    <meta name="description" content="Pagina ce contine metode de contactare">
+        <meta name="keywords" content="Laser,Tag,Contact,mail,telefon,adresa">
+	    <meta name="author" content="Alen">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+		<link rel="shortcut icon" href="imagini/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="fisiere_css/general.css">
+		<link rel="stylesheet" type="text/css" href="fisiere_css/contact.css">
+		
+	</head>
+	
+	<body>
+	
+		<%- include("../fragmente/header") %>
+	
+		<div class="container">
+			
+			<%- include ("../fragmente/nav") %>
+				<section>
+					<h1>Andromeda</h1>
+					<h2>Laser Tag Arena</h2>
+						<section id="primul" class="container2">
+						<h2>Contact</h2>
+							<div>
+									<p><%= locals.user.username %>,</p>	
+									<p>Pentru rezervari si detalii ne puteti contacta la:</p>
+									<address>
+										mail: <a href="mailto:andromeda.arena@gmail.com">andromeda.arena@gmail.com</a><br>
+										telefon: <a href="tel:+0241456789">0241 456 789</a><br>
+										adresa: Strada Iancului nr.30<br>
+										<div>
+										Program:<br>
+										Vineri - Sâmbătă 10:00 - 01:00<br>
+										Duminică - Joi: 10:00 - 24:00
+										</div>
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.555456963582!2d26.138849815523514!3d44.442280279102214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f92a64affc43%3A0x44883aa5ad71d94b!2s%C8%98oseaua%20Iancului%2025%2C%20Bucure%C8%99ti%20077085!5e0!3m2!1sro!2sro!4v1574072144583!5m2!1sro!2sro" ></iframe>
+									</address>
+							</div>
+					</section>
+				</section>
+		</div>
+		<%- include ("../fragmente/footer") %>
+	</body>
+</html>

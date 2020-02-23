@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<title>Andromeda - Team Deathmatch</title>
+		<meta charset="UTF-8">
+	    <meta name="description" content="Pagina cu modul de joc Team Deathmatch">
+        <meta name="keywords" content="Laser,Tag,mod,joc,jucator,Team,Deathmatch">
+	    <meta name="author" content="Alen">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+		<link rel="shortcut icon" href="imagini/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="fisiere_css/general.css">
+		<link rel="stylesheet" type="text/css" href="fisiere_css/moduri_de_joc.css">
+		
+	</head>
+	
+	<body>
+	
+		<%- include("../fragmente/header") %>
+	
+		<div class="container">
+			
+			<%- include ("../fragmente/nav") %>
+				<section>
+					<h1>Andromeda</h1>
+					<h2>Laser Tag Arena</h2>
+						<section id="primul" class="container2">
+						<h2>Team_Deathmatch</h2>
+							<div>
+									<div id="atentie">
+										<p>Atentie!!</p>
+									</div>
+								<p>Acest mod de joc se joaca in echipe.</p>
+								<p><b>Team Deathmatch</b> este modul de joc clasic, ce consta in gasirea inamicilor si eliminarea lor.</p>
+								<p>Pentru jucatorii mai experimentati, se poate opta la versiunea fara respawn a jocului.(o singura viata per jucator)</p>
+								<p>Punctele sunt acordate in functie de kill-uri, death-uri si accuracy.</p>
+								
+								<img src="imagini/TeamDeathmatch.jpg" title="Imagine care arata cum functioneaza modul de joc Team Deathmatch" alt="Imagine care arata cum functioneaza modul de joc Team Deathmatch">
+								<p> Reguli: </p>
+								<ul>
+									<li>Fara friendly fire.</li>
+									<li>Echipa cu cele mai multe puncte castiga.</li>
+									<li>Jucatorul cu cele mai multe puncte este catalogat drept MVP ( Most valuable player ).</li>
+								</ul>
+							</div>
+					</section>
+				</section>
+		</div>
+		<%- include ("../fragmente/footer") %>
+	</body>
+</html>

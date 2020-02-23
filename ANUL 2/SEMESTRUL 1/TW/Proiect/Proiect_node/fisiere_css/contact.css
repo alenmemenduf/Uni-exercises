@@ -1,0 +1,35 @@
+address{
+	margin-left:10%;
+	font-family:Lux-Montag;
+	font-style:normal;
+	font-size:1.5em;
+	word-wrap:break-word;
+}
+address div{
+	padding: 2vw 0vw 2vw;
+}
+address a:hover, address a:active{
+	color:rgb(130,250,130);
+}
+address iframe{
+	margin-top:3vw;
+	display:block;
+	height:40vw;
+	width:60vw;
+	border:0;
+}
+@media only screen and (min-width:768px) and (max-width:1024px){
+address{
+font-size:4vw;
+}
+}
+
+@media only screen and (max-width:768px){
+	
+address{
+	font-size:5vw;
+}
+address iframe{
+	margin-top:5vw;
+}
+}

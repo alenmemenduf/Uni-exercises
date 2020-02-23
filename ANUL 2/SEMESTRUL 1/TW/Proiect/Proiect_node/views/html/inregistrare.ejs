@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<title>Andromeda - NOU!!! Mini Game</title>
+		<meta charset="UTF-8">
+	    <meta name="description" content="Pagina ce contine metode de contactare">
+        <meta name="keywords" content="Laser,Tag,Contact,mail,telefon,adresa">
+	    <meta name="author" content="Alen">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0">
+		<link rel="shortcut icon" href="imagini/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="fisiere_css/general.css">
+		<link rel="stylesheet" type="text/css" href="fisiere_css/contact.css">
+		
+	</head>
+	
+	<body>
+	
+		<%- include("../fragmente/header") %>
+	
+		<div class="container">
+			
+			<%- include ("../fragmente/nav") %>
+				<section>
+					<h1>Andromeda</h1>
+					<h2>Laser Tag Arena</h2>
+						<section id="primul" class="container2">
+						<h2>MINI GAME</h2>
+									<% if(!locals.user){ %>
+									<div>
+										<p>INREGISTRARE:</p>
+										<form id="register" method="post">
+										<label>e-mail:</label>
+										<input type="text" name="email" value="">
+										<label>username:</label>
+										<input type="text" name="username" value="">
+										<label>parola:</label>
+										<input type="password" name="parola" value="">
+										<br>
+										<input type="submit" value="submit">
+									</div>
+									
+									
+									<% } %>
+					</section>
+				</section>
+		</div>
+		<%- include ("../fragmente/footer") %>
+		
+		<script src="/game/Model.js"></script>
+	</body>
+</html>
